@@ -1,0 +1,37 @@
+
+<app-product-details [product]="selectedProduct"></app-product-details>
+
+
+<div class="content">
+  <ul class="heroes">
+    <li *ngFor="let product of products" class="heroesElem" >
+
+      <app-product-card-item [product]="product"></app-product-card-item>
+
+      <!-- <mat-card class="product-card">
+        <mat-card-title-group>
+          <mat-card-title>{{product.name}}</mat-card-title>
+          <mat-card-subtitle>{{product.category}}</mat-card-subtitle>
+          <img mat-card-lg-image src="https://cdn21vek.by/img/galleries/6670/124/preview_b/geforcertx3070gamingprooc8gbgddr6ne63070s19p21041a_palit_618288b86c3fa.jpeg" >
+        </mat-card-title-group>
+        <mat-card-content>
+          {{product.description}}
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+        <mat-card-actions>
+          <button mat-button (click)="onSelectDetails(product)">Details</button>
+          <button mat-button (click)="onAddToWatch(product)">Add to watch</button>
+        </mat-card-actions>
+        <mat-card-footer>From {{product.bestPriceNow}} {{product.currencyCode}}</mat-card-footer>
+      </mat-card> -->
+    </li>
+  </ul>
+</div>
+
+
+
+<h1>{{searchString}}</h1>
+<div>
+  <label for="name">Search by name: </label>
+  <input id="name" [(ngModel)]="searchString" placeholder="name">
+</div>
