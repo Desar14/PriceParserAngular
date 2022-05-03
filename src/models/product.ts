@@ -1,3 +1,4 @@
+import { UserReview } from './userReview';
 export interface Product {
   id: string;
   name: string;
@@ -10,4 +11,5 @@ export interface Product {
   averagePriceOverall: number;
   currencyCode: string;
   averageScore: number;
+  reviews: UserReview[]
 }

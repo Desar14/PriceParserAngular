@@ -1,0 +1,22 @@
+.product-card {
+  max-width: 800px;
+  min-width: 600px;
+  margin-bottom: 8px;
+}
+.content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+}
+.tabs{
+  max-width: 800px;
+  min-width: 600px;
+  padding: 16px;
+}
+mat-card-footer{
+  padding: 16px;
+}
+mat-divider{
+  padding: 2px 0px;
+}

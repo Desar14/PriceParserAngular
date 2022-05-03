@@ -13,12 +13,10 @@
     </mat-card-content>
     <mat-divider inset></mat-divider>
     <mat-card-actions>
-      <button mat-button >Details</button>
+      <a routerLink="/products/{{product.id}}" mat-button>Details</a>
       <button mat-button (click)="onAddToWatch(product)">Add to watch</button>
     </mat-card-actions>
-    <mat-card-footer
-      >From {{ product.bestPriceNow }}
-      {{ product.currencyCode }}</mat-card-footer
+    <mat-card-footer>From {{ product.bestPriceNow }} {{ product.currencyCode }}</mat-card-footer
     >
   </mat-card>
 </div>

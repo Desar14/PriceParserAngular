@@ -35,16 +35,7 @@ export class ProductsComponent implements OnInit {
 
   getProducts(): void {
     this.productService.getProducts()
-    .subscribe(products => this.products = products);;
-  }
-
-  selectedProduct?: Product;
-  onSelectDetails(product: Product): void {
-    this.selectedProduct = product;
-  }
-
-  onAddToWatch(product: Product): void {
-    alert("Not implemented");
+    .subscribe(products => this.products = products);
   }
 
 }
